@@ -1,0 +1,133 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background:black
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #ff00ff;
+ color: #ffffff; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #ff00ff; 
+ color:#ff00ff;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 50px;
+    Background-color: #00FF00;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4_MARTINEZ</title>
+  </head>
+   <body> 
+<font color=#00FF00   face=FranklinGothicMedium>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+               <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+            <li align=center><a style="font-weight:bold" href=aboutme.html>ABOUT ME</a></li> 
+           <li align=center><a style="font-weight:bold" href=albums.html>ALBUMS</a></li>
+           <li align=center><a style="font-weight:bold" href=shoes.html>SHOES</a></li> 
+           <li align=center><a style="font-weight:bold" href=bikes.html>BIKES</a></li> 				   
+       </ul> 
+   </div> 
+</div>
+<div align="center" class="content-1">
+<h2> Air Jordans </h2>
+<h1> Air Jordan is an American brand of basketball shoes, athletic, casual, and style clothing produced by Nike. Founded in Chicago, Air Jordan was created for Hall of Fame former basketball player Michael Jordan during his time with the Chicago Bulls. The original Air Jordan sneakers were produced exclusively for Michael Jordan in late 1984, and released to the public on April 1, 1985. The shoes were designed for Nike by Peter Moore, Tinker Hatfield, and Bruce Kilgore. </h1>
+</div>
+<div align="center" class="content-2">
+<h2> New Balance 550 </h2>
+<h1> The New Balance 550 is a lifestyle sneaker from New Balance designed by legendary sneaker architect and “The Godfather of dad shoes,” Steven Smith. Rooted in basketball-ready design, the silhouette was reintroduced in 2020 by the Teddy Santis-led Aimé Leon Dore (ALD). </h1>
+</div>
+<div align="center" class="content-3">
+<h2> Converse </h2>
+<h1> Converse is an American shoe company that designs, distributes, and licenses sneakers, skating shoes, lifestyle brand footwear, apparel, and accessories. Founded in 1908, it has been a subsidiary of Nike, Inc. since 2003. During World War II, Converse shifted its manufacturing to make footwear for the military </h1>
+</div>
+<div align="center" class="footer">
+<h2> 	Vans </h2>
+<h1> Vans is an American manufacturer of skateboarding shoes and related apparel, established in Anaheim, California, and owned by VF Corporation. The company also sponsors surf, snowboarding, BMX, and motocross teams. From 1996 to 2019, the company had been the primary sponsor of the annual Vans Warped Tour traveling rock festival. </h1>
+</div>
+</div>
+</body> 
+</html>

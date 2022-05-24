@@ -1,0 +1,133 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background:black
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #ff00ff;
+ color: #ffffff; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #ff00ff; 
+ color:#ff00ff;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 50px;
+    Background-color: #00FF00;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4_MARTINEZ</title>
+  </head>
+   <body> 
+<font color=#00FF00   face=FranklinGothicMedium>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+          <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+            <li align=center><a style="font-weight:bold" href=aboutme.html>ABOUT ME</a></li> 
+           <li align=center><a style="font-weight:bold" href=albums.html>ALBUMS</a></li>
+           <li align=center><a style="font-weight:bold" href=shoes.html>SHOES</a></li> 
+           <li align=center><a style="font-weight:bold" href=bikes.html>BIKES</a></li> 	   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2>GENDER </h2>
+<h1> MALE</h1>
+</div>
+<div align="center" class="content-2">
+<h2> BIRTHDAY </h2>
+<h1>27/07/2007 </h1>
+</div>
+<div align="center" class="content-3">
+<h2> AGE </h2>
+<h1>15  </h1>
+</div>
+<div align="center" class="footer">
+<h2>Name  </h2>
+<h1> NINO ANDRE E. MARTIINEZ </h1>
+</div>
+</div>
+</body> 
+</html>
